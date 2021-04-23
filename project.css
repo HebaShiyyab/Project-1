@@ -1,0 +1,29 @@
+.body{
+
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/20fa2328-7b87-4789-a45f-22a14b89394f/d6u77q8-30343c4e-9f9c-4e2f-811d-eb4036d11e47.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMjBmYTIzMjgtN2I4Ny00Nzg5LWE0NWYtMjJhMTRiODkzOTRmXC9kNnU3N3E4LTMwMzQzYzRlLTlmOWMtNGUyZi04MTFkLWViNDAzNmQxMWU0Ny5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.dCh-rmWnPr76blD9v18der7d-bE0OdZyejyAcVorlUs);
+    text-align: center;
+
+}
+
+.title{
+    text-align: center;
+    font-style: 20px  solid rgb(145, 73, 73);
+    font-family: cursive  ;
+    text
+}
+.grid-parent{
+    display: grid;
+    grid-template-columns: auto  auto  auto;
+    background-color: rgb(255, 255, 255);
+    padding: 7%;
+}
+
+.grid-item{
+    padding: 30%;
+    font-size: x-large;
+    text-align: center;
+    border: 2px solid black;
+    background-color:blueviolet;
+
+
+}
