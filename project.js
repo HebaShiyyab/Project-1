@@ -13,7 +13,7 @@ function clickOutCome(i){
 }
 if(currentPlayer=== 'playerX' ){
     currentPlayer = 'playerO'
-    parent[index].classList
+    parent[index].classList.add('player')
 }else{
     currentPlayer = 'playerX'
 
