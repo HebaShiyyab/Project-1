@@ -1,9 +1,9 @@
-document.addEventListener('clickMe',()=>{
+document.addEventListener('click',()=>{
 const parent = document.querySelectorAll('.child div')
 const playerDisplay = document.querySelector('#player')
 let currentPlayer = 'playerX'
 parent.forEach(item=> {
-    item.addEventListener('Click', clickOutCome)
+    item.addEventListener('click', clickOutCome)
 
 })
 function clickOutCome(i){
@@ -13,10 +13,10 @@ function clickOutCome(i){
 }
 if(currentPlayer=== 'playerX' ){
     currentPlayer = 'playerO'
-    parent[index].classList.add('player')
+    parent[index].classList.add('playerX')
 }else{
     currentPlayer = 'playerX'
-
+     parent[index].classList.add('playerO')
 }
 })
 
