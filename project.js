@@ -1,30 +1,28 @@
-class Game(X , O){
-    let items = new Array(9).fill(undefined);
-    let result = undefined;
-    let turn = 'X';
+document.addEventListener('clickMe',()=>{
+const parent = document.querySelectorAll('.child div')
+const playerDisplay = document.querySelector('#player')
+let currentPlayer = 'playerX'
+parent.forEach(item=> {
+    item.addEventListener('Click', clickOutCome)
 
-    const winCombinations=[
-    
-            [0,1,2],
-            [3,4,5],
-            [6,7,8],
-            [0,3,6],
-            [1,4,7],
-            [2,5,8],
-            [0,4,8],
-            [2,4,6]
-          ];
-    function setValue(i){
-        items[i]=turn;
-        items=[...items];
-        turn= turn=='X'?'O':'X';
-        if(!items.includes(undefined)){
-
-        }else{
-           checkWinner(); 
-        }
-
-
-
+})
+function clickOutCome(i){
+    const itemArray = Array.from(parent)
+    const items = itemArray.indexOf(i.target)
+    playerDisplay.innerHTML = currentPlayer
+}
+if(currentPlayer=== 'playerX' ){
+    currentPlayer = 'playerO'
+    parent[index].classList
+}else{
+    currentPlayer = 'playerX'
 
 }
+})
+
+
+
+
+
+
+

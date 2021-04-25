@@ -15,9 +15,10 @@
     
     
 }
-.grid-parent{
+.parent{
     display: grid;
     grid-template-columns: auto  auto  auto;
+    width:400px ;
     /* background-color: blue ; */
     padding-bottom: 15%;
     padding-right:15%;
@@ -26,7 +27,7 @@
 
 }
 
-.grid-item{
+.item{
     padding: 20%;
     font-size: x-large;
     text-align: center;
