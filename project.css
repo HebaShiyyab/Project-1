@@ -19,26 +19,24 @@
     display: grid;
     flex-wrap:wrap;
     justify-content: space-between;
-    width:120px ;
-    height: 120px;
-    /* padding-bottom: 15%;
-    padding-right:15%;
-    padding-left:15%;
-    margin-right: 20%; */
-    padding: 20%;
-    font-size: x-large;
-    text-align: center;
-    border: 2px solid black;
+    width:600px ;
+    height: 350px;
+    border: 2px solid gold;
     background-color:rgb(43, 75, 117);
     opacity: 0.5;
-    margin: 2%;
+    margin: 5%;
 
 
 }
-.child div {
-width: 40px; 
-height: 40px;
-margin: 5px;
+.child div{
+/* display: grid; */
+/* flex-wrap:wrap; */
+/* flex-direction: row; */
+box-sizing: border-box;
+width: 200px; 
+height: 100px;
+margin: 4px;
+background-color: gray;
 
 }
 
@@ -53,7 +51,7 @@ margin: 5px;
     
   }
   
-  .button1:hover {
+.button1:hover {
     background-color: #4CAF50;
     color: white;}
 
