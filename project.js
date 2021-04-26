@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const board = document.querySelectorAll('.parent div');
     const playerDisplay = document.getElementById('player');
     const newGame = document.getElementsByClassName('button1')[0]
+//    const checkedFields = Array(9).fill('');
     const win = [
         [0,1,2],
         [3,4,5],
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let currentPlayer = 'playerX';
     
-    const itemArray = Array.from(board)
+    const itemArray = Array.from(board);
     
     
     board.forEach(index=> {
@@ -38,13 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
     newGame.addEventListener('click',()=>{
       board.forEach(index=> {
        index.classList=""
-    
     })
     })
     }
-    })
     
-    /* check win
-    reset
-    alert winner  */
-    
+    function checkWin() {
+        debugger
+        for(let i = 0; i <win.length; i++) {
+            if (checkedFields[win[i][0]] === currentPlayer && checkedFields[win[i][1]] === currentPlayer && checkedFields[win[i][2]] === currentPlayer) {
+            alert(currentPlayer + ' won!');
+            return true;
+        } else if (checkedFields.indexOf('') === -1) {
+            alert('Tie');
+            return true;
+        }
+    }
+}
+})
+   
