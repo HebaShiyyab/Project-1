@@ -56,10 +56,15 @@ background-color: gray;
     color: white;}
 
 .playerX{
-    background-image:url(images.png)
-}
+    background-image:url(cross.png);
+    background-size:100px 70px;
+   background-repeat:no-repeat;
+   background-position:center;
 
 
 .playerO{
-    background-image:url(circle.jpg)
+    background-image:url(circle.png);
+    background-size:100px 70px;
+    background-repeat:no-repeat;
+    background-position:center;
 }

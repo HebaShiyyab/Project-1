@@ -1,11 +1,13 @@
-document.addEventListener('click',()=>{
+document.addEventListener('DOMContentLoaded', () => {
 const parent = document.querySelectorAll('.child div')
 const playerDisplay = document.querySelector('#player')
 let currentPlayer = 'playerX'
+
+
 const itemArray = Array.from(parent)
 
-parent.forEach(item=> {
-    item.addEventListener('click', clickOutCome)
+parent.forEach(index=> {
+    index.addEventListener('click', clickOutCome)
 
 })
 function clickOutCome(i){
@@ -13,13 +15,16 @@ function clickOutCome(i){
     playerDisplay.innerHTML = currentPlayer
 
 if(currentPlayer === 'playerX' ){
-    currentPlayer = 'playerO'
     parent[index].classList.add('playerX')
+    currentPlayer = 'playerO'
+
 }else{
+    squares[index].classList.add('playerO')
     currentPlayer = 'playerX'
-     parent[index].classList.add('playerO')
 }
-}})
+}
+
+})
 
 
 
