@@ -15,11 +15,10 @@
     
     
 }
-.child{
-    display: grid;
+.parent{
+    display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    width:600px ;
     height: 350px;
     border: 2px solid gold;
     background-color:rgb(43, 75, 117);
@@ -28,7 +27,7 @@
 
 
 }
-.child div{
+.parent div{
 /* display: grid; */
 /* flex-wrap:wrap; */
 /* flex-direction: row; */
@@ -48,6 +47,7 @@ background-color: gray;
     padding: 16px 40px;
     font-family: cursive  ;
     text-align: center;
+    cursor: pointer;
     
   }
   
@@ -60,7 +60,7 @@ background-color: gray;
     background-size:100px 70px;
    background-repeat:no-repeat;
    background-position:center;
-
+}
 
 .playerO{
     background-image:url(circle.png);
