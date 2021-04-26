@@ -13,7 +13,6 @@ const win = [
     [2,4,6]
   ];
 const checkedFields = itemArray(9).fill('');
-current =items.textContent ;
 
 let currentPlayer = 'playerX';
 
@@ -23,7 +22,7 @@ board.forEach(index=> {
     index.addEventListener('click', clickOutCome)
 
 })
-function clickOutCome(e){
+ function clickOutCome(e){
     const items = itemArray.indexOf(e.target)
     playerDisplay.innerHTML = currentPlayer
 
@@ -37,27 +36,24 @@ if(currentPlayer === 'playerX' ){
 }
 newGame.addEventListener('click',()=>{
 })
-function init() {
-    let current = 'O';
-    currentPlayer.textContent = current;
-    for (let i = 0; i < fields.length; i++) {
-      fields[i].textContent = '';
-      checkedFields[i] = '';
-    }
-  },
+// function init() {
+//     let current = 'X';
+//     currentPlayer.textContent = current;
+//     for (let i = 0; i < parent.length; i++) {
+//         parent[i].textContent = '';
+//       checkedFields[i] = '';
+//     }
+//   }
 function checkWin() {
     for(let i = 0; i < win.length; i++) {
       if (checkedFields[win[i][0]] === current && checkedFields[win[i][1]] === current && checkedFields[win[i][2]] === current) {
         alert(current + ' won!');
-        this.init();
+        init();
         return true;
       } else if (checkedFields.indexOf('') === -1) {
         alert('Tie');
         init();
         return true;
       }
-    }
-  }
-});
-
-
+    }}
+ }

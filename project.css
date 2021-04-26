@@ -8,10 +8,9 @@
 }
 .title{
     text-align: center;
-    /* font-style: 20px  solid rgb(145, 73, 73); */
     font-family: cursive  ;
     font-weight: bolder ;
-    color: rgb(166, 165, 179);
+    color: rgb(43, 75, 117);
     
     
 }
@@ -20,7 +19,7 @@
     flex-wrap:wrap;
     justify-content: space-between;
     height: 350px;
-    border: 2px solid gold;
+    border: 3px solid gold;
     background-color:rgb(43, 75, 117);
     opacity: 0.5;
     margin: 5%;
@@ -28,9 +27,6 @@
 
 }
 .parent div{
-/* display: grid; */
-/* flex-wrap:wrap; */
-/* flex-direction: row; */
 box-sizing: border-box;
 width: 200px; 
 height: 100px;
